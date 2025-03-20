@@ -23,7 +23,7 @@ To make pentesting **DVBA** easier, I have added:
 - **Bypass Frida Detection** (Credit: [kayssel.com](https://kayssel.com/))  
 
 ✅ **Python Script**  
-- **Decrypt Parameter Values** to analyze app communication  
+- **Decrypt Parameter Values** (Credit: [@rengoku6500](https://github.com/rengoku6500/))
 
 These tools will help you **save time and focus on exploiting vulnerabilities**! 🚀  
 
