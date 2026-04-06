@@ -1,0 +1,32 @@
+0. hidupkan server Frida 
+
+
+adb devices
+adb -s emulator-5554 shell
+su root
+chmod 777 /data/local/tmp/frida-server
+/data/local/tmp/frida-server &
+
+
+
+
+1. cek pakej(aplikasi yang nak digodam)
+
+adb shell pm list packages  --->cari aplikasi tu  
+
+adb shell ps | Select-String namaaplikasi   --> cari aplikasi dengan nama
+
+adb shell ps | Select-String damnvulnerablebank  --> cari id proses aplikasi tu
+
+
+
+
+2. jalankan skrip di aplikasi itu
+
+ frida -U -p 7391 -l ssl_pinning.js --> run script
+
+ frida -U -p 7391 -l ssl_pinning.js -l secondscript.js  --> run 2 script
+
+
+ frida -U -p 7391 -l bypass_root_sslpin.js -l frida_detect.js
+
